@@ -1,10 +1,11 @@
+#include <cstdint>
 namespace speedtest
 {
-    void sort(int arr[], int n);
-    void swap(int &a, int &b);
-    int *rand_n(const int size);
+    void sort(uint32_t arr[], int n);
+    void swap(uint32_t &a, uint32_t &b);
+    void rand_n(uint32_t numbers[], int size);
 
-    void sort(int arr[], int n)
+    void sort(uint32_t arr[], int n)
     {
         for (int i = 0; i < n - 1; i++)
 
@@ -15,21 +16,19 @@ namespace speedtest
             }
     }
 
-    void swap(int &a, int &b)
+    void swap(uint32_t &a, uint32_t &b)
     {
-        int t = a;
+        uint32_t t = a;
         a = b;
         b = t;
     }
 
-    int *rand_n(const int size)
+    void rand_n(uint32_t numbers[], int size)
     {
         srand(time(0));
-        int *numbers = new int[size];
         for (int i = 0; i < size; i++)
         {
-            numbers[i] = rand() % 8192;
+            numbers[i] = rand() % size*size*size;
         }
-        return numbers;
     }
 }

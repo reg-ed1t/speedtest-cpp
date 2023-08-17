@@ -1,10 +1,6 @@
-#include <cstdint>
+#include "testing.h"
 namespace speedtest
 {
-    void sort(uint32_t arr[], int n);
-    void swap(uint32_t &a, uint32_t &b);
-    void rand_n(uint32_t numbers[], int size);
-
     void sort(uint32_t arr[], int n)
     {
         for (int i = 0; i < n - 1; i++)
@@ -28,7 +24,8 @@ namespace speedtest
         srand(time(0));
         for (int i = 0; i < size; i++)
         {
-            numbers[i] = rand() % size*size*size;
+            numbers[i] = rand();
         }
     }
 }
+

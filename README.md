@@ -1,2 +1,2 @@
 # speedtest-cpp
-Code that tests speed of computer using full power of C++
+The code that tests speed of computer using full power of C++

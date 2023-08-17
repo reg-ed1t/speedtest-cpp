@@ -1,7 +1,7 @@
-#include <iostream>
-#include <chrono>
-#include "main.h"
-#include <cstdint>
+//#include <iostream>
+//#include <chrono>
+#include "testing.h"
+//#include <cstdint>
 using namespace std;
 using namespace speedtest;
 

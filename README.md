@@ -15,4 +15,5 @@ sh build.sh
 cd bin
 ./speedtest-cpp
 ```
+If you want, you can specify the size of the array after the name of the compiled file
 

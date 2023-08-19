@@ -1,14 +1,11 @@
-//#include <iostream>
-//#include <chrono>
 #include "testing.h"
-//#include <cstdint>
 using namespace std;
 using namespace speedtest;
 
-int main()
+int main(int argc, char *argv[])
 {
     srand(time(0));
-    const int size = 8192;
+    const int size = (argc > 1) ? stoi(argv[1]) : 8192;
     uint32_t *numbers = new uint32_t[size];
     auto begin = chrono::steady_clock::now();
     rand_n(numbers, size);
